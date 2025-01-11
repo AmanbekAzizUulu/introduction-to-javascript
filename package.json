@@ -1,0 +1,15 @@
+{
+	"name": "my-javascript-project",
+	"version": "1.0.0",
+	"description": "My first JavaScript project",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"test": "echo \"No tests specified\""
+	},
+	"author": "Amanbek",
+	"license": "ISC",
+	"dependencies": {
+		"my-javascript-project": "file:"
+	}
+}
