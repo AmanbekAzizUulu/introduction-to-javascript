@@ -1,0 +1,65 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000000;
+	color: #64f112a0;
+}
+
+#paragraph {
+	border: 2px solid red; /* Ярко-красная рамка */
+	padding: 10px; /* Внутренний отступ от текста до рамки */
+	display: inline-block; /* Адаптация размера рамки к содержимому */
+  }
+
+button {
+	margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent; /* Изменим цвет рамки при наведении */
+    border-radius: 5px;
+    background-color: #4CAF50; /* Зеленый цвет кнопки */
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Плавный переход для всех изменений */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тень, чтобы создать эффект объема */
+}
+
+button:hover {
+    background-color: #45a049; /* Темнее зеленый при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Более выраженная тень */
+    transform: translateY(-4px); /* Поднимаем кнопку немного вверх */
+}
+
+button:active {
+    background-color: #388E3C; /* Еще более темный цвет при нажатии */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Уменьшаем тень */
+    transform: translateY(2px); /* Сдвигаем кнопку вниз, имитируя нажатие */
+}
+
+input[type="text"] {
+	margin: 10px; /* Внешние отступы */
+    padding: 10px 15px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    border: 2px solid #ccc; /* Серая рамка */
+    border-radius: 5px; /* Округленные углы */
+    background-color: #fff; /* Белый фон */
+    color: #333; /* Цвет текста */
+    width: 17%; /* Поле ввода на всю ширину родительского элемента */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    transition: all 0.3s ease; /* Плавный переход для всех эффектов */
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Зеленая рамка при фокусе */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Легкая тень зеленого цвета */
+    outline: none; /* Убираем стандартную обводку при фокусе */
+}
+
+input[type="text"]:hover {
+    border-color: #888; /* Цвет рамки при наведении */
+}
+
+input[type="text"].error {
+    border-color: #f44336; /* Красная рамка, если ошибка */
+    box-shadow: 0 0 10px rgba(244, 67, 54, 0.5); /* Тень красного цвета */
+}

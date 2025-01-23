@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My JavaScript Project</title>
+	<link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+	<h1>Добро пожаловать в проект</h1>
+
+	<button person-name="Aibek" person-age="26" onclick="
+					onClickButton(this);
+					buttonPressesCounter()
+			">
+		PRESS ME
+	</button>
+
+	<button ondblclick="onDoubleClickButton()">PRESS ME DOUBLE TIME</button>
+
+	<p onclick="onClickParagraph()">PRESS ME</p>
+
+	<!-- <img onmouseover="onMouseOver()" onmouseleave="onMouseOut()" src="media/square.png" alt="square"> -->
+
+	<input id="firstName" oninput="onInput__first_name(event)" type="text" placeholder="type in your first name">
+	<input id="lastName" oninput="onInput__last_name(event)" type="text" placeholder="type in your last name">
+
+	<button onclick="printPersonInfo__button(); handleClick(event)">PRESS TO VIEW PERSON INFO</button>
+
+	<div id="personInfo"></div>
+
+	<p id="paragraph" title="testing paragraph title attribute">This is paragraph.</p><br>
+
+	<button onclick="htmlElement__log_info()">PRESS TO VIEW HTML-ELEMENT INFO</button><br>
+
+	<button onclick="htmlElement__change_style()">PRESS TO CHANGE HTML-ELEMENT CSS</button><br><br><br>
+
+
+	<p>Texts:</p>
+	<ul>
+		<li><span class="simple-text">Text 1</span></li>
+		<li><span>Text 2</span></li>
+		<li><span>Text 3</span></li>
+		<li><span>Text 4</span></li>
+	</ul>
+	<button onclick="printTextContent__span()">PRESS TO VIEW SPAN ELEMENT INFO</button><br>
+	<button onclick="printTextContent__elements_by_class_name()">PRESS TO VIEW "simple-text" CLASS ELEMENT INFO</button><br><br><br>
+
+	<script src="../../src/script.js"> </script>
+</body>
+
+</html>

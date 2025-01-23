@@ -3,3 +3,10 @@ function sayHello() {
 }
 
 module.exports = {sayHello};
+
+let points = {
+	x: 10,
+	y:{
+		z: 10
+	}
+};
